@@ -8,9 +8,9 @@ and how many times they watched each movie.
 The program must support the following:
 
 class Movie - models a movie which includes
-  - movie name
-  - movie rating (G, PG, PG-13, R)
-  - watched - the number of times the movie has been watched
+* movie name
+* movie rating (G, PG, PG-13, R)
+* watched - the number of times the movie has been watched
 
 class Movies - models a collection of movie objects
 
@@ -18,20 +18,18 @@ Obviously, Movies needs to know about Movie since it is a collection of Movie ob
 However, our main driver should only interact with the Movies class.
 
 For example. a simple main should be able to
-  - create a Movies object
-  - ask the Movies object to add a movie by providing the movie name, rating and watched count
-  - ask the Movies object to increment the watched count by 1 for a movie given its name
-  - ask the Movies object to display all of its movies
+* create a Movies object
+* ask the Movies object to add a movie by providing the movie name, rating and watched count
+* ask the Movies object to increment the watched count by 1 for a movie given its name
+* ask the Movies object to display all of its movies
 
 Additionally, 
-  - if we try to add a movie whose name is already in the movies collection 
-we should display this error to the user
-  - if we try to increment the watched count for a movie whose name is not in the movies
-collection we should display this error to the user
+* if we try to add a movie whose name is already in the movies collection we should display this error to the user
+* if we try to increment the watched count for a movie whose name is not in the movies collection we should display this error to the user
 
 I've provided a basic shell as a starting point for one possible solution 
 that has fully implemented
-  - Movie and main
+* Movie and main
 
 You can choose to use my starting point or start from scratch.
 
