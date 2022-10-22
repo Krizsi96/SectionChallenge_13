@@ -16,8 +16,6 @@ class Movie {
   Movie(std::string name_value, int watch_number_value = 0);
   // Copy Constructor
   Movie(const Movie &source);
-  // Destructor
-  ~Movie();
 };
 
 #endif  // _MOVIE_H_
