@@ -13,11 +13,14 @@ enable_testing()
 add_subdirectory(googletest)
 
 set(Headers
-    asd.h
+    Movie.h
+    Movies.h
 )
 
 set(Sources
-    asd.cpp
+    main.cpp
+    Movie.cpp
+    Movies.cpp
 )
 
 add_library(${This} STATIC ${Sources} ${Headers})
