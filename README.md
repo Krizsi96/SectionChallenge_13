@@ -2,8 +2,7 @@
 
 ## Section 13
 
-For this challenge you are to develop the foundation for a program for movie fanatics to keep track of what movies they have watched
-and how many times they watched each movie.
+For this challenge you are to develop the foundation for a program for movie fanatics to keep track of what movies they have watched and how many times they watched each movie.
 
 The program must support the following:
 
