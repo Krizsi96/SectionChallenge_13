@@ -150,5 +150,37 @@ TEST(MoviesClassTests,
   bool isAdded = test_movies.add_movie(
       expected_name_value, expected_rating_value, expected_watch_number_value);
   EXPECT_FALSE(isAdded);
+}
 
+TEST(
+    MoviesClassTests,
+    FunctionTest_incrementing_existing_movie_watch_counter_should_increase_watch_counter_by_1) {  // initialise
+  Movies test_movies;
+  std::string expected_name_value = "TEST";
+  std::string expected_rating_value = "G";
+  int expected_watch_number_value = 1000;
+
+  test_movies.add_movie(expected_name_value, expected_rating_value,
+                        expected_watch_number_value);
+
+  // test increment
+  bool isIncremented =
+      test_movies.increment_movie_watch_counter(expected_name_value);
+  EXPECT_TRUE(isIncremented);
+}
+
+TEST(
+    MoviesClassTests,
+    FunctionTest_incrementing_not_existing_movie_watch_counter_should_give_an_error) {  // initialise
+  Movies test_movies;
+  std::string expected_name_value = "TEST";
+  std::string expected_rating_value = "G";
+  int expected_watch_number_value = 1000;
+
+  test_movies.add_movie(expected_name_value, expected_rating_value,
+                        expected_watch_number_value);
+
+  // test increment
+  bool isIncremented = test_movies.increment_movie_watch_counter("NOT_CORRECT");
+  EXPECT_FALSE(isIncremented);
 }
