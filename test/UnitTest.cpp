@@ -16,7 +16,7 @@ TEST(
   Movie test_movie{expected_name_value, expected_rating_value};
 
   // test
-  int real_watch_number_value = test_movie.get_watch_number();
+  int real_watch_number_value = test_movie.get_watch_counter();
   std::string real_rating_value = test_movie.get_rating();
   std::string real_name_value = test_movie.get_name();
 
@@ -37,7 +37,7 @@ TEST(
                    expected_watch_number_value};
 
   // test
-  int real_watch_number_value = test_movie.get_watch_number();
+  int real_watch_number_value = test_movie.get_watch_counter();
   std::string real_rating_value = test_movie.get_rating();
   std::string real_name_value = test_movie.get_name();
 
@@ -56,9 +56,9 @@ TEST(MovieClassTests, FunctionTest_incrementing_watch_count_number) {
   // test
   for (int i{0}; i < 10; i++) {
     int expected_watch_number_value = i;
-    int watch_number_value = test_movie.get_watch_number();
+    int watch_number_value = test_movie.get_watch_counter();
     EXPECT_EQ(watch_number_value, expected_watch_number_value);
-    test_movie.increment_watch_number();
+    test_movie.increment_watch_counter();
   }
 }
 

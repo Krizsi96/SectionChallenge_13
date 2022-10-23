@@ -11,6 +11,7 @@ class Movies {
 
  public:
   std::vector<Movie> get_movies() const { return movie_list; }
+  void add_movie(std::string name, std::string rating, int watch_counter);
   // Constructor
   Movies();
   // Copy Constructor
