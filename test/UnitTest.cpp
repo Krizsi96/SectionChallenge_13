@@ -121,13 +121,56 @@ TEST(
   EXPECT_EQ("TEST3", test3);
 }
 
-TEST(MoviesClassTests,
-     FunctionTest_ask_down_rating_by_movie_name_should_give_the_rating_back) {
+TEST(
+    MoviesClassTests,
+    FunctionTest_ask_down_rating_by_movie_name_in_the_list_should_give_the_rating_back) {
   // initialise
   Movies test_movies;
   test_movies.add_movie("TEST1", "G");
 
-  // test size
+  // test
+  std::vector<std::string> movie = test_movies.get_movies();
+  std::string movie_name = movie.at(0);
+  std::string movie_rating = test_movies.get_movie_rating(movie_name);
+  EXPECT_EQ("G", movie_rating);
+}
+
+TEST(
+    MoviesClassTests,
+    ExceptionTest_ask_down_rating_by_movie_name_not_in_the_list_should_give_empty_rating_back) {
+  // initialise
+  Movies test_movies;
+  test_movies.add_movie("TEST1", "G");
+
+  // test
+  std::string movie_rating = test_movies.get_movie_rating("movie_name");
+  EXPECT_EQ("", movie_rating);
+}
+
+TEST(
+    MoviesClassTests,
+    FunctionTest_ask_down_watch_number_by_movie_name_in_the_list_should_give_the_watch_number_back) {
+  // initialise
+  Movies test_movies;
+  test_movies.add_movie("TEST1", "G", 100);
+
+  // test
+  std::vector<std::string> movie = test_movies.get_movies();
+  std::string movie_name = movie.at(0);
+  int movie_watch_number = test_movies.get_movie_watch_counter(movie_name);
+  EXPECT_EQ(100, movie_watch_number);
+}
+
+TEST(
+    MoviesClassTests,
+    ExceptionTest_ask_down_watch_number_by_movie_name_not_in_the_list_should_give_minus_one_back) {
+  // initialise
+  Movies test_movies;
+  test_movies.add_movie("TEST1", "G", 100);
+
+  // test
+  int movie_watch_number = test_movies.get_movie_watch_counter("movie_name");
+  EXPECT_EQ(-1, movie_watch_number);
 }
 
 TEST(
