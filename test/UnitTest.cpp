@@ -188,14 +188,15 @@ TEST(
   EXPECT_TRUE(isAdded);
 
   // test addition
-  /* std::vector<std::string> real_movie_list = test_movies.get_movies();
-  std::string real_name_value = real_movie_list.at(0).get_name();
-  std::string real_rating_value = real_movie_list.at(0).get_rating();
-  int real_watch_number_value = real_movie_list.at(0).get_watch_counter();
+  std::string real_name_value = test_movies.get_movies().at(0);
+  std::string real_rating_value =
+      test_movies.get_movie_rating(expected_name_value);
+  int real_watch_number_value =
+      test_movies.get_movie_watch_counter(expected_rating_value);
 
   EXPECT_EQ(expected_name_value, real_name_value);
   EXPECT_EQ(expected_rating_value, real_rating_value);
-  EXPECT_EQ(expected_watch_number_value, real_watch_number_value); */
+  EXPECT_EQ(expected_watch_number_value, real_watch_number_value);
 }
 
 TEST(
@@ -213,14 +214,15 @@ TEST(
   EXPECT_TRUE(isAdded);
 
   // test addition
-  /* std::vector<std::string> real_movie_list = test_movies.get_movies();
-  std::string real_name_value = real_movie_list.at(0).get_name();
-  std::string real_rating_value = real_movie_list.at(0).get_rating();
-  int real_watch_number_value = real_movie_list.at(0).get_watch_counter();
+  std::string real_name_value = test_movies.get_movies().at(0);
+  std::string real_rating_value =
+      test_movies.get_movie_rating(expected_name_value);
+  int real_watch_number_value =
+      test_movies.get_movie_watch_counter(expected_rating_value);
 
   EXPECT_EQ(expected_name_value, real_name_value);
   EXPECT_EQ(expected_rating_value, real_rating_value);
-  EXPECT_EQ(expected_watch_number_value, real_watch_number_value); */
+  EXPECT_EQ(expected_watch_number_value, real_watch_number_value);
 }
 
 TEST(MoviesClassTests,
