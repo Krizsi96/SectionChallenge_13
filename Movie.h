@@ -16,8 +16,7 @@ class Movie {
   void increment_watch_counter() { watch_counter++; }
 
   // Constructor
-  Movie(std::string init_name, std::string init_rating,
-        int init_watch_counter = 0);
+  Movie(std::string init_name, std::string init_rating, int init_watch_counter);
   // Copy Constructor
   Movie(const Movie &source);
 };
