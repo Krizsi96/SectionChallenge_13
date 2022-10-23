@@ -50,3 +50,20 @@ bool Movies::increment_movie_watch_counter(const std::string name) {
 
   return isMovieInTheList;
 }
+
+std::string Movies::get_movie_rating() const {
+  std::string movie_rating{""};
+
+  return movie_rating;
+}
+
+std::vector<std::string> Movies::get_movies() const {
+  std::vector<std::string> movies{};
+
+  for (int i{0}; i < movie_list.size(); i++) {
+    std::string movie_name = movie_list.at(i).get_name();
+    movies.push_back(movie_name);
+  }
+
+  return movies;
+}
