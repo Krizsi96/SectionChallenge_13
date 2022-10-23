@@ -12,12 +12,12 @@ class Movie {
  public:
   std::string get_name() const { return name; }
   std::string get_rating() const { return rating; }
-  int get_watch_number() const { return watch_counter; }
-  void increment_watch_number() { watch_counter++; }
+  int get_watch_counter() const { return watch_counter; }
+  void increment_watch_counter() { watch_counter++; }
 
   // Constructor
   Movie(std::string init_name, std::string init_rating,
-        int watch_number_value = 0);
+        int init_watch_counter = 0);
   // Copy Constructor
   Movie(const Movie &source);
 };

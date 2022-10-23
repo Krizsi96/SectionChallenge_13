@@ -1,3 +1,5 @@
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/364cf66e92084dbe87eee6d0ef286fc2)](https://www.codacy.com/gh/Krizsi96/SectionChallenge_13/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Krizsi96/SectionChallenge_13&amp;utm_campaign=Badge_Grade)
+
 # Section Challege
 
 ## Section 13
