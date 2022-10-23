@@ -5,25 +5,9 @@
 #include "../Movie.h"
 #include "../Movies.h"
 
-TEST(
-    MovieClassTests,
-    FunctionTest_initialization_without_watch_count_number_should_result_0_watch_count_number) {
-  // initialise
-  std::string expected_name_value = "TEST";
-  std::string expected_rating_value = "G";
-  int expected_watch_number_value = 0;
-
-  Movie test_movie{expected_name_value, expected_rating_value};
-
-  // test
-  int real_watch_number_value = test_movie.get_watch_counter();
-  std::string real_rating_value = test_movie.get_rating();
-  std::string real_name_value = test_movie.get_name();
-
-  EXPECT_EQ(real_watch_number_value, expected_watch_number_value);
-  EXPECT_EQ(real_rating_value, expected_rating_value);
-  EXPECT_EQ(real_name_value, expected_name_value);
-}
+//////////////////////////////////////////////////////
+//              Movie Class Tests                   //
+//////////////////////////////////////////////////////
 
 TEST(
     MovieClassTests,
@@ -50,8 +34,10 @@ TEST(MovieClassTests, FunctionTest_incrementing_watch_count_number) {
   // initialise
   std::string expected_name_value = "TEST";
   std::string expected_rating_value = "G";
+  int expected_watch_number_value = 0;
 
-  Movie test_movie{expected_name_value, expected_rating_value};
+  Movie test_movie{expected_name_value, expected_rating_value,
+                   expected_watch_number_value};
 
   // test
   for (int i{0}; i < 10; i++) {
@@ -111,8 +97,13 @@ TEST(MoviesClassTests,
   ASSERT_EQ(expected_size, init_movie_list.size());
 }
 
-TEST(MoviesClassTests,
-     FunctionTest_add_new_movie_to_the_list_should_add_new_movie) {
+//////////////////////////////////////////////////////
+//              Movies Class Tests                  //
+//////////////////////////////////////////////////////
+
+TEST(
+    MoviesClassTests,
+    FunctionTest_add_new_movie_to_the_list_with_watch_number_should_add_new_movie) {
   // initialise
   Movies test_movies;
   std::string expected_name_value = "TEST";
@@ -121,6 +112,31 @@ TEST(MoviesClassTests,
 
   bool isAdded = test_movies.add_movie(
       expected_name_value, expected_rating_value, expected_watch_number_value);
+
+  EXPECT_TRUE(isAdded);
+
+  // test addition
+  std::vector<Movie> real_movie_list = test_movies.get_movies();
+  std::string real_name_value = real_movie_list.at(0).get_name();
+  std::string real_rating_value = real_movie_list.at(0).get_rating();
+  int real_watch_number_value = real_movie_list.at(0).get_watch_counter();
+
+  EXPECT_EQ(expected_name_value, real_name_value);
+  EXPECT_EQ(expected_rating_value, real_rating_value);
+  EXPECT_EQ(expected_watch_number_value, real_watch_number_value);
+}
+
+TEST(
+    MoviesClassTests,
+    FunctionTest_add_new_movie_to_the_list_without_watch_number_should_add_new_movie_with_0_watch_number) {
+  // initialise
+  Movies test_movies;
+  std::string expected_name_value = "TEST";
+  std::string expected_rating_value = "G";
+  int expected_watch_number_value = 0;
+
+  bool isAdded =
+      test_movies.add_movie(expected_name_value, expected_rating_value);
 
   EXPECT_TRUE(isAdded);
 
