@@ -10,7 +10,11 @@ class Movies {
   std::vector<Movie> movie_list;
 
  public:
-  bool increment_watched(std::string name);
+  std::vector<Movie> get_movies() const { return movie_list; }
+  // Constructor
+  Movies();
+  // Copy Constructor
+  Movies(Movies &source);
 };
 
 #endif  // _MOVIES_H_
