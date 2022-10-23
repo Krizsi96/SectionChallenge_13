@@ -1,15 +1,5 @@
 #include "Movies.h"
 
-bool Movies::increment_watched(std::string name) {
-  bool isMovieIncremented = false;
+Movies::Movies() : movie_list{} {}
 
-  for (size_t i{0}; i < movie_list.size(); i++) {
-    Movie* movie = &movie_list.at(i);
-
-    if (name == (*movie).get_name()) {
-      (*movie).increment_watch_number();
-      isMovieIncremented = true;
-    }
-  }
-  return isMovieIncremented;
-}
+Movies::Movies(Movies &source) : movie_list{source.movie_list} {}
