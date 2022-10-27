@@ -192,7 +192,7 @@ TEST(
   std::string real_rating_value =
       test_movies.get_movie_rating(expected_name_value);
   int real_watch_number_value =
-      test_movies.get_movie_watch_counter(expected_rating_value);
+      test_movies.get_movie_watch_counter(expected_name_value);
 
   EXPECT_EQ(expected_name_value, real_name_value);
   EXPECT_EQ(expected_rating_value, real_rating_value);
@@ -218,7 +218,7 @@ TEST(
   std::string real_rating_value =
       test_movies.get_movie_rating(expected_name_value);
   int real_watch_number_value =
-      test_movies.get_movie_watch_counter(expected_rating_value);
+      test_movies.get_movie_watch_counter(expected_name_value);
 
   EXPECT_EQ(expected_name_value, real_name_value);
   EXPECT_EQ(expected_rating_value, real_rating_value);
