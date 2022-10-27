@@ -6,9 +6,15 @@
   actor MovieFanatic
   
   rectangle "Movieteka" {
-    MovieFanatic --> (Add movie with info)
-    MovieFanatic <-- (Display all movies with info)
-    MovieFanatic --> (Increase watch counter\nfor movie)
+    MovieFanatic -- (Add movie with info)
+    MovieFanatic -- (Display all movies with info)
+    MovieFanatic -- (Increase watch counter\nfor movie)
   }
+
+  (Add movie with info)
+  note right : list of movies watched
+
+  (Increase watch counter\nfor movie)
+  note right : counts how many time\na movie was watched
 
 @enduml
