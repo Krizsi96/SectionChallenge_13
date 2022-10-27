@@ -1,0 +1,14 @@
+@startuml Use Case Diagram
+  skinparam actorStyle awesome
+  left to right direction
+  
+  'Creating actors
+  actor MovieFanatic
+  
+  rectangle "Movieteka" {
+    MovieFanatic --> (Add movie with info)
+    MovieFanatic <-- (Display all movies with info)
+    MovieFanatic --> (Increase watch counter\nfor movie)
+  }
+
+@enduml
