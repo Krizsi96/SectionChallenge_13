@@ -6,15 +6,20 @@
   actor MovieFanatic
   
   rectangle "Movieteka" {
-    MovieFanatic -- (Add movie with info)
-    MovieFanatic -- (Display all movies with info)
-    MovieFanatic -- (Increase watch counter\nfor movie)
+    'Use cases
+    usecase Add as "Add movie with info"
+    usecase Display as "Display all movies with info"
+    usecase Increment as "Increment watch counter
+                          for movie"
+    usecase Check as "Check movie in the list"
+
+    MovieFanatic -- Add
+    MovieFanatic -- Display
+    MovieFanatic -- Increment
+    Increment ..> Check : <<include>>
+    Add ..> Check : <<include>>
   }
 
-  (Add movie with info)
-  note right : list of movies watched
-
-  (Increase watch counter\nfor movie)
-  note right : counts how many time\na movie was watched
+  note "info:\n - name\n - rating\n - watch counter" as note1
 
 @enduml

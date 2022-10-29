@@ -1,0 +1,25 @@
+@startuml Class Diagram
+
+class Movie {
+  -String name
+  -String rating
+  -int watch_counter
+  +void setName()
+  +void setRating()
+  +void setWatch_counter()
+  +String getName()
+  +String getrating()
+  +int getWatch_counter()
+}
+
+class Movies {
+  -vector<Movie> movie_list
+  -bool isMovieInTheList()
+  +void addMovie()
+  +void displayMovies()
+  +void incrementWatch_counter()
+}
+
+Movies "1" *-- "0..*" Movie
+
+@enduml
