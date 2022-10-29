@@ -1,4 +1,7 @@
 @startuml Use Case Diagram
+  !define DARKBLUE
+  !includeurl https://raw.githubusercontent.com/Drakemor/RedDress-PlantUML/master/style.puml
+
   skinparam actorStyle awesome
   left to right direction
   

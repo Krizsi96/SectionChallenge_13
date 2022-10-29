@@ -1,4 +1,6 @@
 @startuml Class Diagram
+!define DARKSTYLE
+!include style.puml
 
 class Movie {
   -String name
