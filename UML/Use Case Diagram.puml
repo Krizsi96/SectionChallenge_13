@@ -10,11 +10,10 @@
   
   rectangle "Movieteka" {
     'Use cases
-    usecase Add as "Add movie with info"
-    usecase Display as "Display all movies with info"
-    usecase Increment as "Increment watch counter
-                          for movie"
-    usecase Check as "Check movie in the list"
+    usecase Add as "Add movie with info" << Use Case >>
+    usecase Display as "Display all movies with info" << Use Case >>
+    usecase Increment as "Increment watch counter for movie" << Use Case >>
+    usecase Check as "Check movie in the list" << Use Case >>
 
     MovieFanatic -- Add
     MovieFanatic -- Display
