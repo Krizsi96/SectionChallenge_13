@@ -86,7 +86,7 @@ skinparam backgroundColor fff
 !$BOXBG = "2e2e2e"
 !$LIGHTBORDERCOLOR = "767676"
 !$LIGHTBG = "575757"
-skinparam backgroundColor 161b22
+skinparam backgroundColor 0d1117
 !endif
 
 !procedure font_style()

@@ -1,14 +1,14 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="268px" preserveAspectRatio="none" style="width:696px;height:268px;background:#777777;" version="1.1" viewBox="0 0 696 268" width="696px" zoomAndPan="magnify"><defs/><g><!--MD5=[29de3c702156c480bd0f484d327e7c92]
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="268px" preserveAspectRatio="none" style="width:696px;height:268px;background:#0D1117;" version="1.1" viewBox="0 0 696 268" width="696px" zoomAndPan="magnify"><defs/><g><!--MD5=[29de3c702156c480bd0f484d327e7c92]
 cluster Movieteka--><g id="cluster_Movieteka"><rect fill="#2E2E2E" height="242" rx="2.5" ry="2.5" style="stroke:#1B1B1B;stroke-width:1.0;" width="523" x="167" y="20.5"/><text fill="#FFFFFF" font-family="Verdana" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="67" x="395" y="33.5591">Movieteka</text></g><g id="elem_Add"><ellipse cx="288.3749" cy="69.675" fill="#2E2E2E" rx="73.8749" ry="17.175" style="stroke:#1B1B1B;stroke-width:0.5;"/><text fill="#FFFFFF" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="113" x="231.8749" y="72.0497">Add movie with info</text></g><g id="elem_Display"><ellipse cx="288.4047" cy="142.5809" fill="#2E2E2E" rx="93.4047" ry="21.0809" style="stroke:#1B1B1B;stroke-width:0.5;"/><text fill="#FFFFFF" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="156" x="210.4047" y="144.9557">Display all movies with info</text></g><g id="elem_Increment"><ellipse cx="288.3439" cy="222.4688" fill="#2E2E2E" rx="105.3439" ry="23.4688" style="stroke:#1B1B1B;stroke-width:0.5;"/><text fill="#FFFFFF" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="143" x="216.8439" y="218.1592">Increment watch counter</text><text fill="#FFFFFF" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="55" x="260.8439" y="231.5279">for movie</text></g><g id="elem_Check"><ellipse cx="591.9256" cy="130.2851" fill="#2E2E2E" rx="81.9256" ry="18.7851" style="stroke:#1B1B1B;stroke-width:0.5;"/><text fill="#FFFFFF" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="131" x="526.4256" y="132.6599">Check movie in the list</text></g><!--MD5=[fbf0f86b85c959cf0beff16836bfcfe2]
-entity MovieFanatic--><g id="elem_MovieFanatic"><ellipse cx="63" cy="122" fill="#1A66C2" rx="16" ry="16" style="stroke:#002642;stroke-width:1.5;"/><path d="M63,142 C67,142 70,142 74,138 C82,138 90,146 90,154 L90,158 C90,162 86,166 82,166 L44,166 C40,166 36,162 36,158 L36,154 C36,146 44,138 52,138 C56,142 59,142 63,142 " fill="#1A66C2" style="stroke:#002642;stroke-width:1.5;"/><text fill="#FFFFFF" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="73" x="26.5" y="178.5591">MovieFanatic</text></g><g id="elem_note1"><path d="M6,6 L6,69.4746 L120,69.4746 L120,16 L110,6 L6,6 " fill="#1A66C2" style="stroke:#181818;stroke-width:0.5;"/><path d="M110,6 L110,16 L120,16 L110,6 " fill="#1A66C2" style="stroke:#181818;stroke-width:1.0;"/><text fill="#FFFFFF" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="26" x="12" y="22.0591">info:</text><text fill="#FFFFFF" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="41" x="16" y="35.4277">- name</text><text fill="#FFFFFF" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="42" x="16" y="48.7964">- rating</text><text fill="#FFFFFF" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="89" x="16" y="62.165">- watch counter</text></g><!--MD5=[12225a6930feab25646f6453126dcc33]
+entity MovieFanatic--><g id="elem_MovieFanatic"><ellipse cx="63" cy="122" fill="#BB6600" rx="16" ry="16" style="stroke:#662200;stroke-width:1.5;"/><path d="M63,142 C67,142 70,142 74,138 C82,138 90,146 90,154 L90,158 C90,162 86,166 82,166 L44,166 C40,166 36,162 36,158 L36,154 C36,146 44,138 52,138 C56,142 59,142 63,142 " fill="#BB6600" style="stroke:#662200;stroke-width:1.5;"/><text fill="#FFFFFF" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="73" x="26.5" y="178.5591">MovieFanatic</text></g><g id="elem_note1"><path d="M6,6 L6,69.4746 L120,69.4746 L120,16 L110,6 L6,6 " fill="#BB6600" style="stroke:#181818;stroke-width:0.5;"/><path d="M110,6 L110,16 L120,16 L110,6 " fill="#BB6600" style="stroke:#181818;stroke-width:1.0;"/><text fill="#FFFFFF" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="26" x="12" y="22.0591">info:</text><text fill="#FFFFFF" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="41" x="16" y="35.4277">- name</text><text fill="#FFFFFF" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="42" x="16" y="48.7964">- rating</text><text fill="#FFFFFF" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="89" x="16" y="62.165">- watch counter</text></g><!--MD5=[12225a6930feab25646f6453126dcc33]
 link MovieFanatic to Add--><g id="link_MovieFanatic_Add"><path d="M99.67,126.56 C117.32,119.01 139.06,110.2 159,103.5 C183.94,95.12 212.15,87.46 235.77,81.54 " fill="none" id="MovieFanatic-Add" style="stroke:#FFFFFF;stroke-width:1.0;"/></g><!--MD5=[848fe51f38b3b405cfe07955969bb257]
 link MovieFanatic to Display--><g id="link_MovieFanatic_Display"><path d="M99.91,142.5 C125.58,142.5 161.35,142.5 194.78,142.5 " fill="none" id="MovieFanatic-Display" style="stroke:#FFFFFF;stroke-width:1.0;"/></g><!--MD5=[e23b10cd5a7105940a0c760bce95d4de]
 link MovieFanatic to Increment--><g id="link_MovieFanatic_Increment"><path d="M99.88,157.49 C117.57,164.72 139.3,173.35 159,180.5 C180.84,188.43 205.01,196.51 226.43,203.43 " fill="none" id="MovieFanatic-Increment" style="stroke:#FFFFFF;stroke-width:1.0;"/></g><!--MD5=[57816b8b24e3af26ed752578e9fe954a]
 link Increment to Check--><g id="link_Increment_Check"><path d="M351.61,203.55 C406.05,186.94 484.41,163.03 536.47,147.14 " fill="none" id="Increment-to-Check" style="stroke:#FFFFFF;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#FFFFFF" points="541.42,145.63,531.6451,144.4249,536.6368,147.0864,533.9753,152.078,541.42,145.63" style="stroke:#FFFFFF;stroke-width:1.0;"/><text fill="#BBBBBB" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="54" x="425" y="163.5591">«include»</text></g><!--MD5=[c50ec39f884d93654b4ab1d6e36e22b0]
-link Add to Check--><g id="link_Add_Check"><path d="M344.8,80.69 C395.44,90.93 470.5,106.12 524.41,117.03 " fill="none" id="Add-to-Check" style="stroke:#FFFFFF;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#FFFFFF" points="529.56,118.07,521.5256,112.3736,524.6582,117.0839,519.9479,120.2165,529.56,118.07" style="stroke:#FFFFFF;stroke-width:1.0;"/><text fill="#BBBBBB" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="54" x="425" y="95.5591">«include»</text></g><!--MD5=[d9bbbb01ce1ab7230cbeaf87de1505e8]
+link Add to Check--><g id="link_Add_Check"><path d="M344.8,80.69 C395.44,90.93 470.5,106.12 524.41,117.03 " fill="none" id="Add-to-Check" style="stroke:#FFFFFF;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#FFFFFF" points="529.56,118.07,521.5256,112.3736,524.6582,117.0839,519.9479,120.2165,529.56,118.07" style="stroke:#FFFFFF;stroke-width:1.0;"/><text fill="#BBBBBB" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="54" x="425" y="95.5591">«include»</text></g><!--MD5=[b46b509aa427da9ce8c4346666f10806]
 @startuml Use Case Diagram
-  !define DARKBLUE
-  !includeurl https://raw.githubusercontent.com/Drakemor/RedDress-PlantUML/master/style.puml
+  !define DARKORANGE
+  !include style.puml
 
   skinparam actorStyle awesome
   left to right direction
@@ -39,18 +39,17 @@ link Add to Check--><g id="link_Add_Check"><path d="M344.8,80.69 C395.44,90.93 4
 
 
 
-skinparam backgroundColor 777
-skinparam stereotypeCBackgroundColor 1a66c2
 
 
 
 
 
 
+skinparam stereotypeCBackgroundColor BB6600
 
 
 
-skinparam backgroundColor 777
+skinparam backgroundColor 0d1117
 
 
 
@@ -84,8 +83,8 @@ skinparam class {
 
 
 skinparam actor {
-    backgroundColor 1a66c2
-  borderColor 002642
+    backgroundColor BB6600
+  borderColor 662200
     fontColor fff
   fontName Verdana
   fontSize 11
@@ -125,8 +124,8 @@ skinparam SequenceBox{
 
 
 skinparam interface {
-    backgroundColor 1a66c2
-  borderColor 002642
+    backgroundColor BB6600
+  borderColor 662200
     fontColor fff
   fontName Verdana
   fontSize 11
@@ -214,13 +213,13 @@ skinparam sequence {
   arrowFontColor bbb
   arrowFontSize 11
 
-  lifeLineBorderColor 1a66c2
+  lifeLineBorderColor BB6600
   lifeLineBackgroundColor 575757
 }
 
 skinparam boundary {
-    backgroundColor 1a66c2
-  borderColor 002642
+    backgroundColor BB6600
+  borderColor 662200
     fontColor fff
   fontName Verdana
   fontSize 11
@@ -229,8 +228,8 @@ skinparam boundary {
 }
 
 skinparam control {
-    backgroundColor 1a66c2
-  borderColor 002642
+    backgroundColor BB6600
+  borderColor 662200
     fontColor fff
   fontName Verdana
   fontSize 11
@@ -239,8 +238,8 @@ skinparam control {
 }
 
 skinparam entity {
-    backgroundColor 1a66c2
-  borderColor 002642
+    backgroundColor BB6600
+  borderColor 662200
     fontColor fff
   fontName Verdana
   fontSize 11
@@ -261,8 +260,8 @@ skinparam state {
   arrowFontName Verdana
   arrowFontColor bbb
   arrowFontSize 11
-  startColor 1a66c2
-  endColor 002642
+  startColor BB6600
+  endColor 662200
 }
 
 
@@ -282,8 +281,8 @@ skinparam object {
 
 
 skinparam note {
-    backgroundColor 1a66c2
-  borderColor 002642
+    backgroundColor BB6600
+  borderColor 662200
     fontColor fff
   fontName Verdana
   fontSize 11
