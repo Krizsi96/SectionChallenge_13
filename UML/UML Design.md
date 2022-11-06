@@ -7,3 +7,7 @@
 ## Class Diagram
 
 ![class diagram](Class%20Diagram/Class%20Diagram.svg)
+
+## Sequence Diagram
+
+![Alt text](Sequence%20Diagram/sequence%20diagram.svg)
