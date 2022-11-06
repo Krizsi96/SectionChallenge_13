@@ -1,0 +1,65 @@
+@startuml
+!define DARKORANGE
+!include style.puml
+skinparam actorStyle awesome
+skinparam SequenceBoxBorderColor #Blue
+
+actor MovieFanatic
+participant GUI
+participant Movies
+participant Movie
+
+MovieFanatic <- GUI : Welcome message
+
+== Add Movie ==
+
+MovieFanatic -> GUI : Movie name, rating, watch counter
+GUI -> Movies : addMovie()
+Movies -> Movie : constructor()
+
+alt #LightGreen movie was added
+  Movie -[#Black]-> Movies : <font color=black> true
+  Movies -[#Black]-> GUI : <font color=black> true
+  GUI -[#Black]-> MovieFanatic : <font color=black> success message
+
+else #Pink movie was not added
+  Movie -[#Black]-> Movies : <font color=black> false
+  Movies -[#Black]-> GUI : <font color=black> false
+  GUI -[#Black]-> MovieFanatic : <font color=black> fail message
+end
+
+== Display all movies with info ==
+
+MovieFanatic -> GUI : Show all movies
+GUI -> Movies : displayMovies()
+
+loop #White all movies
+  Movies -[#Black]> Movie : <font color=black> getName()
+  Movies <-[#Black]- Movie : <font color=black> Name
+  Movies -[#Black]> Movie : <font color=black> getRating()
+  Movies <-[#Black]- Movie : <font color=black> Rating
+  Movies -[#Black]> Movie : <font color=black> getWatch_counter()
+  Movies <-[#Black]- Movie : <font color=black> Watch_counter
+end
+
+GUI <-- Movies : Movies Vector
+MovieFanatic <-- GUI : Show the movie list
+
+== Increment watch counter for movie ==
+
+MovieFanatic -> GUI : Movie name to increment
+GUI -> Movies : incrementWatch_counter()
+Movies -> Movie : setWatch_counter()
+
+alt <font color=green>movie exists
+  Movie --> Movies : true
+  Movies --> GUI : true
+  GUI --> MovieFanatic : success message
+
+else <font color=red>movie doesn't exist
+  Movie --> Movies : false
+  Movies --> GUI : false
+  GUI --> MovieFanatic : fail message
+end
+
+@enduml
