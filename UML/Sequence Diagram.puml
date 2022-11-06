@@ -1,4 +1,4 @@
-@startuml
+@startuml sequence diagram
 !define DARKORANGE
 !include style.puml
 skinparam actorStyle awesome
